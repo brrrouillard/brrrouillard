@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matthieu Brouillard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- FIRST PAGE -->
+    <div class="first-section" id="name">
+        <div class="titles">
+            <h1 class="name thin-text">> <span class="thick-text"><span v-bind:class="seenCom">{{ firstName }}</span>
+                    {{ lastName }} <span class="prompt-anim" id="prompt">||</span></span></h1>
+            <h2 class="job"><span v-bind:class="seen">{{ job }}</span> </h2>
+        </div>
+
+        <p class="who-am-i" v-bind:class="seen">Who am I ?</p>
+        <a href="#bio"><i class="fas fa-angle-down who-am-i-arrow" v-bind:class="seen"></i></a>
+    </div>
+
+
+    <!-- SECOND PAGE -->
+    <div class="second-section container-fluid" id="bio">
+        <a href="#name"><i class="fas fa-angle-up home-arrow"></i></a>
+        <p class="home-text">Home</p>
+        <div class="row second-section">
+            <div class="col-sm-6 col-sm-offset-3" id="bio-box">
+                <p>I am Matthieu and I'm 22 years old. I'm currently working as a <strong>Junior
+                        Software Developer</strong> at
+                    <strong>BeCode</strong>. I hope I will
+                    learn a lot of new things and improve my knowledge in Web Development!</p>
+                <p>Besides programmation, I like to listen to music (and sometimes <a href="http://soundcloud.com/bagh_eera">make
+                        some</a>...).<br>
+                    I also enjoy watching movies and doing sport (powerlifting and boxing, which I just started).
+                </p>
+            </div>
+        </div>
+        <p class="discover">Discover</p>
+        <a href="#discover"><i class="fas fa-angle-down discover-arrow"></i></a>
+    </div>
+
+    <!-- THIRD PAGE -->
+    <div class="third-section container-fluid" id="discover">
+        <div class="row third-section">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h1 class="project-page-title">Projects</h1>
+                <div class="row project-container">
+                    <div class="col-sm-4 project-picture">
+                        <img src="assets/img/material1.jpg" alt="" class="img-100">
+                    </div>
+                    <div class="col-sm-8 project-description-block">
+                        <h3 class="project-title">Portfolio</h3>
+                        <p class="project-description">This is the page you're currently losing some time on. I built
+                            it using VueJS and Bootstrap.</p>
+                        <div class="techno-tags-block">
+                            <span class="techno-tag">HTML5</span>
+                            <span class="techno-tag">CSS3</span>
+                            <span class="techno-tag">JavaScript</span>
+                            <span class="techno-tag">Bootstrap</span>
+                            <span class="techno-tag">VueJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row project-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas voluptatum vitae sed
+                    odio adipisci praesentium dolor quae, quo consectetur esse commodi reiciendis. Quas iure, dolor ea
+                    beatae dolorum sint.
+                </div>
+
+                <div class="row project-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas voluptatum vitae sed
+                    odio adipisci praesentium dolor quae, quo consectetur esse commodi reiciendis. Quas iure, dolor ea
+                    beatae dolorum sint.
+                </div>
+
+                <div class="row project-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas voluptatum vitae sed
+                    odio adipisci praesentium dolor quae, quo consectetur esse commodi reiciendis. Quas iure, dolor ea
+                    beatae dolorum sint.
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="js/NameVue.js"></script>
+</body>
+
+</html>

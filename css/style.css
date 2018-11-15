@@ -1,0 +1,268 @@
+html, body, div {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(51, 51, 51);
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.first-section {
+    height: 100vh;
+    background-color: #fdedd8;
+}
+
+.titles {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 4em;
+}
+
+.thin-text {
+    font-weight: 300;
+}
+
+.thick-text {
+    font-weight: 700;
+}
+
+.job {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0px;
+    padding-top: 2vh;
+    margin: 0px;
+    font-size: 2em;
+    font-weight: 300;
+} 
+
+.seenFalse {
+    opacity: 0;
+}
+
+.seenTrue {
+    animation: fadein 2s;
+}
+
+#prompt {
+    background-color: rgb(51, 51, 51);
+    font-size: 0.9em;
+}
+.prompt-anim {
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        background-color: transparent;
+        color: #fdedd8;
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.who-am-i {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 8vh;
+    font-size: 3em;
+    text-align: center;
+    width: 100vw;
+    font-weight: 300;
+}
+
+.who-am-i-arrow {
+    position: absolute;
+    bottom: 1vh;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+
+.who-am-i-arrow:hover, .who-am-i-arrow:active {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(70deg);
+    }
+}
+
+/* 
+* BIO
+*/
+
+.second-section {
+    height: 100vh;
+    background-color: #8b8da0;
+}
+
+.home-text {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 0vh;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.home-arrow {
+    position: relative;
+    bottom: 0vh;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+
+.home-arrow:hover, .home-arrow:active {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+#bio-box {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #eeebe7;
+}
+
+#bio-box a {
+    color: #FFFAED;
+    font-weight: 700;
+    box-shadow: #4D5073 0px -10px 0px inset;
+}
+
+#bio-box a:hover, #bio-box a:active {
+    box-shadow: #4D5073 0px -22px 0px inset;
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+#bio-box p {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.discover {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 30vh;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.discover-arrow {
+    position: relative;
+    bottom: 30vh;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+
+.discover-arrow:hover, .discover-arrow:active {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+/*
+* THIRD SECTION
+*/
+
+.third-section {
+    background-color: #b3b192;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 0vh;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.project-page-title {
+    font-weight: 700;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.project-page-title::after {
+    content: " ";
+    border: 4px solid #918F6C;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: 7vw;
+}
+
+.project-container {
+    margin: 5vh;
+    padding: 5vh;
+    background-color: #D9D7C0;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.05),0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.1);
+}
+
+.project-title {
+    font-weight: 700;
+    text-align: start;
+    font-size: 1.5em;
+    padding: 1vh;
+}
+
+.project-description {
+    text-align: justify;
+    padding: 1vh;
+    line-height: 150%;
+}
+
+.techno-tags-block {
+    padding: 1vh;
+    text-align: start;
+}
+
+.techno-tag {
+    padding: 8px;
+    border: 2px solid rgb(148, 137, 163);
+    border-radius: 4px;
+}
+
+.img-100 {
+    width: 100%;
+}
+

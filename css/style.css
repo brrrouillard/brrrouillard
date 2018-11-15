@@ -189,15 +189,20 @@ a, a:hover {
 }
 
 #bio-box p {
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: 300;
     text-align: justify;
 }
+@media screen and (max-width: 900px) {
+    #bio-box p {
+      font-size: 1.8em;
+    }
+  }
 
 .discover {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    bottom: 31vh;
+    bottom: 26vh;
     font-size: 3em;
     text-align: center;
     font-weight: 300;
@@ -205,7 +210,7 @@ a, a:hover {
 
 .discover-arrow {
     position: relative;
-    bottom: 34vh;
+    bottom: 28vh;
     text-align: center;
     width: 100vw;
     margin: 0;
@@ -235,7 +240,7 @@ a, a:hover {
 .project-page-title {
     font-weight: 700;
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
 }
 
 .project-page-title::after {
@@ -302,7 +307,7 @@ a, a:hover {
 
 .project-links-live:hover {
     color: #fff;
-    opacity : 0.8;
+    opacity : 0.75;
 }
 
 .project-links-live svg {
@@ -314,4 +319,30 @@ a, a:hover {
 .project-links-live:visited {
     text-decoration: none;
     color: #fff;
+}
+
+.project-links-github {
+    margin-left: 1vw;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    background-color: #D9D7C0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+.project-links-github:hover {
+    color: rgb(51, 51, 51);
+    opacity: 0.75;
+}
+
+.project-links-github:visited {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.project-links-github svg {
+    height: 0.8em;
+    font-weight: normal;
+    vertical-align: -.05em;
 }
